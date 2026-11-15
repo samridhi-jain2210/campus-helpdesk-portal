@@ -1,0 +1,62 @@
+01. git --version
+    Confirm that Git is installed and record the installed version.
+02. git config user.name "Samridhi Jain"
+    Set the author name for commits in this local repository.
+03. git config user.email "YOUR_GITHUB_EMAIL"
+    Set the commit email; replace this with the email associated with the GitHub account.
+04. git init -b main
+    Create a repository and name its initial branch main.
+05. git status
+    Inspect the working tree and staging area.
+06. git add index.html about.html
+    Stage the two starter pages for the first commit.
+07. git commit -m "Create campus helpdesk starter pages"
+    Save the initial project version.
+08. git add index.html
+    Stage the revised home page.
+09. git commit -m "Clarify support categories and request details"
+    Record the home-page improvements.
+10. git branch feature
+    Create a separate feature branch.
+11. git switch feature
+    Move to the feature branch.
+12. git add about.html
+    Stage the updated portal overview.
+13. git commit -m "Add request lifecycle to portal overview"
+    Save the feature-branch change.
+14. git switch main
+    Return to the main branch.
+15. git merge --no-ff feature -m "Merge portal overview improvements"
+    Merge the feature branch and retain an explicit merge commit.
+16. git log --oneline --graph --decorate --all
+    Display branches and merge history in a compact graph.
+17. git add .gitignore
+    Stage the ignore rules.
+18. git commit -m "Ignore diagnostic logs and scratch data"
+    Track the ignore configuration.
+19. git check-ignore -v debug-session.log scratch-data/draft.txt
+    Show which ignore rule excludes each sample file.
+20. git status --short --ignored
+    Display short status, including ignored paths.
+21. git commit -m "Add temporary announcement banner"
+    Create a temporary change to demonstrate a safe undo.
+22. git revert --no-edit HEAD
+    Undo the latest commit by adding a new reversal commit.
+23. git diff HEAD~2 HEAD -- index.html
+    Confirm the reverted file matches its pre-demo content.
+24. git add git_commands.txt
+    Stage the command reference for version control.
+25. git commit -m "Document Git workflow commands"
+    Commit the command documentation.
+26. git remote add origin https://github.com/USERNAME/campus-helpdesk-portal.git
+    Connect the local repository to a new public GitHub repository; replace USERNAME.
+27. git remote -v
+    Check the configured remote address.
+28. git push -u origin main
+    Publish main and set its upstream tracking branch.
+29. git push origin feature
+    Publish the feature branch.
+30. git branch -v
+    List local branches and their latest commits.
+31. git rev-list --count main
+    Count commits reachable from main.
